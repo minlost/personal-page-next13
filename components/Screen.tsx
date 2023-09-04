@@ -26,7 +26,7 @@ const Screen: FC<ScreenProps> = ({ children }) => {
         }`}
       >
         <Chanells />
-        <div className="max-w-7xl  flex  mx-auto">
+        <div className={`${isTvMode ? "" : "max-w-7xl"}  flex  mx-auto`}>
           {isShowing && <>{children}</>}
         </div>
       </div>
