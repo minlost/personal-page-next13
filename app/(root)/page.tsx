@@ -23,7 +23,7 @@ export default function HomePage() {
       ${
         isTvMode
           ? "aspect-video text-[1.2em] md:text-[3em] -translate-y-[1px] z-50 "
-          : "w-full  xl:px-0 text-[2em] md:text-[4em] z-50"
+          : "w-full h-full xl:px-0 text-[2em] md:text-[4em] z-50"
       } duration-1000 ease-in-out  custom-text-shadow  relative  px-5 md:px-12 ${
         isSwaping ? "animate-textShaking" : ""
       } `}
