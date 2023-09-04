@@ -31,6 +31,7 @@ const Channels = () => {
                 isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
               }  `}
               controls
+              playsInline
               autoPlay
             >
               <source src="/video/pulp.mp4" type="video/mp4" />
@@ -47,6 +48,7 @@ const Channels = () => {
                 isTvMode ? "scale-150" : "scale-[4] lg:scale-150 "
               }  `}
               controls
+              playsInline
               autoPlay
             >
               <source src="/video/psycho.mp4" type="video/mp4" />
@@ -62,6 +64,7 @@ const Channels = () => {
               isTvMode ? "scale-150" : "scale-[4] lg:scale-150 "
             }  `}
             controls
+            playsInline
             autoPlay
           >
             <source src="/video/shinning.mp4" type="video/mp4" />
