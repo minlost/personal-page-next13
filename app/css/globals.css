@@ -18,20 +18,20 @@
   background-size: 5px 5px;
   filter: url(#noise);
   position: absolute;
-  top: -50px;
-  left: -50px;
-  width: calc(100% + 50px);
-  height: calc(100% + 50px);
+  top: -100px;
+  left: -100px;
+  width: calc(100% + 100px);
+  height: calc(100% + 100px);
 }
 .section2 {
   background: repeating-linear-gradient(#111, #111, 50%, #fff 50%, #fff);
   background-size: 5px 5px;
   filter: url(#tvNoise);
   position: absolute;
-  top: -50px;
-  left: -50px;
-  width: calc(100% + 50px);
-  height: calc(100% + 50px);
+  top: -100px;
+  left: -100px;
+  width: calc(100% + 100px);
+  height: calc(100% + 100px);
 }
 .bg-tv-texture {
   background: url("/public/img/noise.png");

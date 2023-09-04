@@ -24,7 +24,7 @@ export default function Home() {
       ${
         isTvMode
           ? "aspect-video w-full text-[1.2em] md:text-[3em] -translate-y-[1px] z-50 "
-          : "w-full min-h-screen xl:px-0 text-[2em] md:text-[4em] z-50"
+          : "w-full  xl:px-0 text-[2em] md:text-[4em] z-50"
       } duration-1000 ease-in-out  custom-text-shadow  relative  px-5 md:px-12 `}
     >
       <ProgramSwitcher />
