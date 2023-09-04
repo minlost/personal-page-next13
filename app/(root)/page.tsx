@@ -37,18 +37,18 @@ export default function HomePage() {
         )}
       >
         <p>
-          Hello, I'm Václav Vlček, an enthusiastic Junior Developer passionate
-          about programming, technology, astronomy, and science. With a
-          specialization in Next.js, TypeScript, and Python, I continuously
-          strive to enhance and broaden my skill set. My driving forces include
-          problem-solving, embracing new technologies, and crafting efficient
-          and innovative solutions. Apart from diving deep into code, I am
-          deeply fascinated by the wonders of the universe and the scientific
-          principles that govern it. I relish taking on challenging projects and
-          collaborating with teams to bring ideas to life. Eagerly looking
-          forward to integrating my dedication, expertise, and passion for both
-          tech and science with your team as we join hands to craft remarkable
-          digital experiences.
+          Hello, I&apos;m Václav Vlček... Václav Vlček, an enthusiastic Junior
+          Developer passionate about programming, technology, astronomy, and
+          science. With a specialization in Next.js, TypeScript, and Python, I
+          continuously strive to enhance and broaden my skill set. My driving
+          forces include problem-solving, embracing new technologies, and
+          crafting efficient and innovative solutions. Apart from diving deep
+          into code, I am deeply fascinated by the wonders of the universe and
+          the scientific principles that govern it. I relish taking on
+          challenging projects and collaborating with teams to bring ideas to
+          life. Eagerly looking forward to integrating my dedication, expertise,
+          and passion for both tech and science with your team as we join hands
+          to craft remarkable digital experiences.
         </p>
       </div>
 
