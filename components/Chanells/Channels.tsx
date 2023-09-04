@@ -30,7 +30,6 @@ const Channels = () => {
               className={`w-full h-full ${
                 isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
               }  `}
-              controls
               playsInline
               autoPlay
             >
@@ -47,7 +46,6 @@ const Channels = () => {
               className={`w-full h-full ${
                 isTvMode ? "scale-150" : "scale-[4] lg:scale-150 "
               }  `}
-              controls
               playsInline
               autoPlay
             >
@@ -63,7 +61,6 @@ const Channels = () => {
             className={`w-full h-full ${
               isTvMode ? "scale-150" : "scale-[4] lg:scale-150 "
             }  `}
-            controls
             playsInline
             autoPlay
           >
