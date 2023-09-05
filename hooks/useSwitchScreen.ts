@@ -20,7 +20,7 @@ type SwitchScreenStore = {
 }
 
 export const useSwitchScreen = create<SwitchScreenStore>((set) => ({
-  isTvMode: true,
+  isTvMode: false,
   toggleTVMode: () => set((state) => ({ isTvMode: !state.isTvMode })),
   channel: 1,
   setChannel: (channel) => {

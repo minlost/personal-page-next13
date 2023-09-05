@@ -16,7 +16,7 @@ const Screen: FC<ScreenProps> = ({ children }) => {
       className={`${
         isTvMode
           ? "    mt-20  w-[90%] aspect-video xl:w-[70%] border-black border text-[1rem] animate-move  shadow-screen-glowing "
-          : "w-full h-full text-[2rem]"
+          : "w-full text-[2rem]"
       }duration-500 ease-in-out   relative z-0
       `}
     >
@@ -25,10 +25,8 @@ const Screen: FC<ScreenProps> = ({ children }) => {
           isSwaping ? "custom-text-shadow-animation" : "custom-text-shadow"
         }`}
       >
-        <Chanells />
-        {/* <div className={`${isTvMode ? "" : "max-w-7xl"}  flex  mx-auto`}> */}
+        {/* <Chanells /> */}
         {isShowing && <>{children}</>}
-        {/* </div> */}
       </div>
     </div>
   )
