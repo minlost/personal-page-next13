@@ -14,18 +14,16 @@ export default function Home() {
   return (
     <div
       className={`
-      ${isSwaping ? "animate-textShaking" : ""}
-    
       ${
         shouldShowScrollbar && isTvMode
           ? "overflow-y-scroll "
           : "overflow-hidden"
-      }      
+      }
       ${
         isTvMode
           ? "aspect-video text-[1.2em] md:text-[3em] -translate-y-[1px] z-50 "
-          : "w-screen h-screen xl:px-0 text-[2em] md:text-[4em] z-50 overflow-y-scroll"
-      } duration-1000 ease-in-out  custom-text-shadow relative  px-5 md:px-12 ${
+          : "w-full h-full  text-[2em] md:text-[4em] z-50 overflow-y-scroll "
+      } custom-text-shadow relative  px-5 md:px-16 lg:px-32 xl:px-44 z-[200] ${
         isSwaping ? "animate-textShaking" : ""
       } `}
     >
@@ -34,7 +32,7 @@ export default function Home() {
       <ul
         className={cn(
           `    mt-20 flex items-center flex-col`,
-          `${isTvMode ? "md:mt-64" : "mt-48 md:mt-96 "}`
+          `${isTvMode ? "md:mt-64" : "mt-48  "}`
         )}
       >
         <li>

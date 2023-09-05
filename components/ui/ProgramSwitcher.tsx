@@ -90,7 +90,7 @@ const ProgramSwitcher = () => {
       )}
     >
       <div
-        className={`text-[0.9em] ${
+        className={`text-[0.6em] ${
           isSwaping ? "custom-text-shadow-animation" : " text-red-800"
         } flex flex-col`}
       >

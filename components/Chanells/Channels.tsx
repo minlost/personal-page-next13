@@ -23,10 +23,13 @@ const Channels = () => {
           <video
             ref={videoRef}
             className={`w-full h-full opacity-50 ${
-              isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
+              isTvMode
+                ? " scale-[2] md:scale-150 "
+                : "scale-[5] md:scale-[4] lg:scale-150 "
             }  `}
             playsInline
             autoPlay
+            loop
           >
             <source src="/video/pulp.mp4" type="video/mp4" />
           </video>
@@ -52,6 +55,7 @@ const Channels = () => {
             }  `}
             playsInline
             autoPlay
+            loop
           >
             <source src="/video/psycho.mp4" type="video/mp4" />
           </video>
@@ -80,55 +84,39 @@ const Channels = () => {
           >
             <source src="/video/shinning.mp4" type="video/mp4" />
           </video>
-        </div>
-      )}
-      {channel === 4 && (
-        <div className="bg-black opacity-70 w-full h-full relative ">
-          <div className="-z-10 section2  w-full h-full ">
-            <svg viewBox="0 0 100 100">
-              <filter id="tvNoise">
-                <feTurbulence id="tvTurbulence">
-                  <animate
-                    attributeName="baseFrequency"
-                    dur="20s"
-                    values="0.1 0.1;0.05 0.05;0.1 0.1;"
-                    repeatCount="indefinite"
-                  />
-                </feTurbulence>
-                <feDisplacementMap
-                  in="SourceGraphic"
-                  scale="10"
-                ></feDisplacementMap>
-              </filter>
-            </svg>
-          </div>
+          <video
+            className={`w-full h-full opacity-20 ${
+              isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
+            }  `}
+            playsInline
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/video/tvEffect.mp4" type="video/mp4" />
+          </video>
         </div>
       )}
 
-      {channel === 5 && (
+      {channel === 4 && (
         <>
           <div className="video-overlay  w-full h-full  "></div>
         </>
       )}
+      {channel === 5 && <div className="video-overlay  w-full h-full  "></div>}
 
       {(channel === 6 || channel === 7 || channel === 8 || channel === 9) && (
-        <div className=" w-full h-full section bg-slate-300">
-          <svg viewBox="0 0 100 100">
-            <filter id="noise">
-              <feTurbulence id="turbulence">
-                <animate
-                  attributeName="baseFrequency"
-                  dur="10s"
-                  values="0.9 0.9;0.8 0.8;0.9 0.9;"
-                  repeatCount="indefinite"
-                />
-              </feTurbulence>
-              <feDisplacementMap
-                in="SourceGraphic"
-                scale="20"
-              ></feDisplacementMap>
-            </filter>
-          </svg>
+        <div className="video-overlay  w-full h-full  ">
+          <video
+            ref={videoRef}
+            className={`w-full h-full ${
+              isTvMode ? "scale-150" : "scale-[4] lg:scale-150 "
+            }  `}
+            playsInline
+            autoPlay
+          >
+            <source src="/video/whitenoise.mp4" type="video/mp4" />
+          </video>
         </div>
       )}
     </div>
