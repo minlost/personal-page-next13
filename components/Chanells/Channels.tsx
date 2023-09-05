@@ -101,14 +101,16 @@ const Channels = () => {
           <div className="video-overlay  w-full h-full  "></div>
         </>
       )}
-      {channel === 5 && <div className="video-overlay  w-full h-full  "></div>}
+      {channel === 5 && (
+        <div className=" bg-slate-700 video-overlay  w-full h-full  "></div>
+      )}
 
       {(channel === 6 || channel === 7 || channel === 8 || channel === 9) && (
-        <div className="video-overlay  w-full h-full  ">
+        <div className=" w-full h-full  ">
           <video
             ref={videoRef}
             className={`w-full h-full ${
-              isTvMode ? "scale-[4]" : "scale-[4] lg:scale-150 "
+              isTvMode ? "scale-150" : "scale-[4] lg:scale-150 "
             }  `}
             playsInline
             autoPlay
