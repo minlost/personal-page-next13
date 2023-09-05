@@ -28,8 +28,10 @@ export default function Home() {
       ${
         isTvMode
           ? "aspect-video text-[1.2em] md:text-[3em] -translate-y-[1px] z-50 "
-          : "w-full min-h-screen aspect-video  xl:px-0 text-[2em] md:text-[4em] z-50"
-      } duration-1000 ease-in-out  custom-text-shadow  relative  px-5 md:px-12 `}
+          : "w-screen h-screen xl:px-0 text-[2em] md:text-[4em] z-50 overflow-y-scroll"
+      } duration-1000 ease-in-out  custom-text-shadow relative  px-5 md:px-12 ${
+        isSwaping ? "animate-textShaking" : ""
+      } `}
     >
       <ProgramSwitcher />
 
