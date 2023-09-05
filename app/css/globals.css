@@ -17,19 +17,13 @@
   background: repeating-linear-gradient(#111, #111, 50%, #fff 50%, #fff);
   background-size: 5px 5px;
   filter: url(#noise);
-  position: absolute;
-  top: -100px;
-  left: -100px;
-  width: calc(100% + 100px);
-  height: calc(100% + 100px);
+  scale: 1.4;
 }
 .section2 {
   background: repeating-linear-gradient(#111, #111, 50%, #fff 50%, #fff);
   background-size: 5px 5px;
   filter: url(#tvNoise);
-  position: absolute;
-  inset: 0;
-  scale: 1.2;
+  scale: 1.4;
 }
 .bg-tv-texture {
   background: url("/public/img/noise.png");

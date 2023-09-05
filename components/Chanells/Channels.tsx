@@ -65,8 +65,8 @@ const Channels = () => {
         </div>
       )}
       {channel === 4 && (
-        <div className="bg-black opacity-70 w-full h-full ">
-          <div className="-z-10 section2 w-full absolute h-full">
+        <div className="bg-black opacity-70 w-full h-full relative ">
+          <div className="-z-10 section2  w-full h-full ">
             <svg>
               <filter id="tvNoise">
                 <feTurbulence id="tvTurbulence">
