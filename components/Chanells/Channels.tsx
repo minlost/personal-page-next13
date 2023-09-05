@@ -16,43 +16,39 @@ const Channels = () => {
     <div
       className={`z-10 aspect-video h-full w-full fixed top-0 left-0 overflow-hidden duration-1000 ease-custom-bezier ${
         channel === 2
-          ? "bg-slate-200"
+          ? "bg-slate-400"
           : channel === 4
           ? "bg-white"
           : "bg-slate-700"
       }`}
     >
       {channel === 1 && (
-        <>
-          <div className="video-overlay  w-full h-full  ">
-            <video
-              ref={videoRef}
-              className={`w-full h-full ${
-                isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
-              }  `}
-              playsInline
-              autoPlay
-            >
-              <source src="/video/pulp.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </>
+        <div className="video-overlay  w-full h-full  ">
+          <video
+            ref={videoRef}
+            className={`w-full h-full ${
+              isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
+            }  `}
+            playsInline
+            autoPlay
+          >
+            <source src="/video/pulp.mp4" type="video/mp4" />
+          </video>
+        </div>
       )}
       {channel === 2 && (
-        <>
-          <div className="video-overlay  w-full h-full  ">
-            <video
-              ref={videoRef}
-              className={`w-full h-full ${
-                isTvMode ? "scale-150" : "scale-[4] lg:scale-150 "
-              }  `}
-              playsInline
-              autoPlay
-            >
-              <source src="/video/psycho.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </>
+        <div className="video-overlay  w-full h-full  ">
+          <video
+            ref={videoRef}
+            className={`w-full h-full ${
+              isTvMode ? "scale-150" : "scale-[4] lg:scale-150 "
+            }  `}
+            playsInline
+            autoPlay
+          >
+            <source src="/video/psycho.mp4" type="video/mp4" />
+          </video>
+        </div>
       )}
       {channel === 3 && (
         <div className="video-overlay  w-full h-full  ">
