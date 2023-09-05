@@ -67,8 +67,8 @@ const Channels = () => {
       {channel === 4 && (
         <div className="bg-black opacity-70 w-full h-full relative ">
           <div className="-z-10 section2  w-full h-full ">
-            <svg viewBox="-20 -20 100 100">
-              <filter id="tvNoise" x="-10%" y="-10%" width="120%" height="120%">
+            <svg viewBox="0 0 100 100">
+              <filter id="tvNoise">
                 <feTurbulence id="tvTurbulence">
                   <animate
                     attributeName="baseFrequency"

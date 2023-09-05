@@ -23,7 +23,11 @@
   background: repeating-linear-gradient(#111, #111, 50%, #fff 50%, #fff);
   background-size: 5px 5px;
   filter: url(#tvNoise);
-  scale: 1.4;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: calc(100% + 50px);
+  height: calc(100% + 50px);
 }
 .bg-tv-texture {
   background: url("/public/img/noise.png");
