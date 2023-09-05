@@ -16,7 +16,7 @@ const Screen: FC<ScreenProps> = ({ children }) => {
       className={`${
         isTvMode
           ? "    mt-20  w-[90%] h-full  aspect-video xl:w-[70%] border-black border text-[1rem]   shadow-screen-glowing "
-          : "w-full text-[1rem] "
+          : "w-full h-full   text-[1rem] "
       } duration-500 ease-linear relative z-0 `}
     >
       <div

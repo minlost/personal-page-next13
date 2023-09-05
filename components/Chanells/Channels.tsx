@@ -23,9 +23,7 @@ const Channels = () => {
           <video
             ref={videoRef}
             className={`w-full h-full opacity-50 ${
-              isTvMode
-                ? " scale-[2] md:scale-150 "
-                : "scale-[5] md:scale-[4] lg:scale-150 "
+              isTvMode ? "scale-150" : "scale-[5] lg:scale-150 "
             }  `}
             playsInline
             autoPlay
@@ -114,6 +112,8 @@ const Channels = () => {
             }  `}
             playsInline
             autoPlay
+            loop
+            muted
           >
             <source src="/video/whitenoise.mp4" type="video/mp4" />
           </video>
