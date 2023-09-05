@@ -6,6 +6,7 @@ import type { Metadata } from "next"
 import { VT323 } from "next/font/google"
 import "./css/globals.css"
 import "./css/stars.css"
+import Wrapper from "@/components/Wrapper"
 
 const inter = VT323({ weight: "400", style: "normal", subsets: ["latin"] })
 export const metadata: Metadata = {
@@ -20,14 +21,16 @@ export default function RootLayout({
 }) {
   return (
     <html className="" lang="en">
-      <body
-        className={` ${inter.className} flex justify-center  bg-black  pb-20`}
-      >
-        <StarParallax />
-        <SpaceSwitcher />
-        <Screen>{children}</Screen>
-        <Controller />
-      </body>
+      <Wrapper>
+        <body
+          className={` ${inter.className} flex justify-center  bg-black  pb-20`}
+        >
+          <StarParallax />
+          <SpaceSwitcher />
+          <Screen>{children}</Screen>
+          <Controller />
+        </body>
+      </Wrapper>
     </html>
   )
 }
