@@ -47,9 +47,8 @@ export default function HomePage() {
           and passion for both tech and science with your team as we join hands
           to craft remarkable digital experiences.
         </p>
+        <LinksBox />
       </div>
-
-      <LinksBox />
     </div>
   )
 }

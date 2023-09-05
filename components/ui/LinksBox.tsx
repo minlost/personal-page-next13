@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const LinksBox = () => {
   return (
-    <ul className=" w-full  flex justify-center mt-20 gap-5 text-[0.5em] custom-text-shadow-links  text-black-500">
+    <ul className=" w-full  flex justify-center mt-12 gap-5 text-[0.5em] custom-text-shadow-links  text-black-500">
       <li>
         <span
           className={`relative z-20 hover:animate-blinkmulticolor text-[2em] md:text-[1em]  `}
