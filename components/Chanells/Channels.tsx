@@ -108,7 +108,7 @@ const Channels = () => {
           <video
             ref={videoRef}
             className={`w-full h-full ${
-              isTvMode ? "scale-150" : "scale-[4] lg:scale-150 "
+              isTvMode ? "scale-[4]" : "scale-[4] lg:scale-150 "
             }  `}
             playsInline
             autoPlay
