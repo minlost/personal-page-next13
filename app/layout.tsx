@@ -21,16 +21,14 @@ export default function RootLayout({
 }) {
   return (
     <html className="" lang="en">
-      <Wrapper>
-        <body
-          className={` ${inter.className} flex justify-center  bg-black  pb-20`}
-        >
-          <StarParallax />
-          <SpaceSwitcher />
-          <Screen>{children}</Screen>
-          <Controller />
-        </body>
-      </Wrapper>
+      <body
+        className={` ${inter.className} flex justify-center overflow-hidden bg-black  pb-20`}
+      >
+        <StarParallax />
+        <SpaceSwitcher />
+        <Screen>{children}</Screen>
+        <Controller />
+      </body>
     </html>
   )
 }
