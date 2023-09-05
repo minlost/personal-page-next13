@@ -26,7 +26,7 @@ const Screen: FC<ScreenProps> = ({ children }) => {
         }`}
       >
         {/* <Chanells /> */}
-        {isShowing && <>{children}</>}
+        {/* {isShowing && <>{children}</>} */}
       </div>
     </div>
   )
