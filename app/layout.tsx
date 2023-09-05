@@ -19,8 +19,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={` ${inter.className} flex justify-center  bg-black`}>
+    <html className="overflow-hidden" lang="en">
+      <body
+        className={` ${inter.className} flex justify-center  bg-black overflow-hidden pb-20`}
+      >
         <StarParallax />
         <SpaceSwitcher />
         <Screen>{children}</Screen>

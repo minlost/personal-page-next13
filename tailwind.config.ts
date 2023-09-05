@@ -82,7 +82,7 @@ const config: Config = {
         noise: "noise 5 easy-in-out infinite",
         move: "move 10s linear infinite",
         blinkmulticolor: "blinkmulticolor 0.5s linear infinite",
-        textShaking: "textShaking 0.5s infinite",
+        textShaking: "textShaking 0.5s ",
       },
       boxShadow: {
         "screen-glowing": "0px 0px 14px 0px rgba(255, 255, 255, 0.5)",
