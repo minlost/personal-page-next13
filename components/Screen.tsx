@@ -25,8 +25,8 @@ const Screen: FC<ScreenProps> = ({ children }) => {
           isSwaping ? "custom-text-shadow-animation" : "custom-text-shadow"
         }`}
       >
-        {/* <Chanells /> */}
-        {/* {isShowing && <>{children}</>} */}
+        <Chanells />
+        {isShowing && <>{children}</>}
       </div>
     </div>
   )
