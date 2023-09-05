@@ -15,19 +15,19 @@ const Screen: FC<ScreenProps> = ({ children }) => {
     <div
       className={`${
         isTvMode
-          ? "    mt-20  w-[90%] h-full md:h-full aspect-video xl:w-[70%] border-black border text-[1rem] animate-move  shadow-screen-glowing "
+          ? "    mt-20  w-[90%] h-full md:h-full aspect-video xl:w-[70%] border-black border text-[1rem]   shadow-screen-glowing "
           : "w-full text-[2rem]"
-      }duration-500 ease-in-out   relative z-0
+      }duration-500 ease-linear   relative z-0
       `}
     >
-      <div
+      {/* <div
         className={`${
           isSwaping ? "custom-text-shadow-animation" : "custom-text-shadow"
         }`}
-      >
-        <Chanells />
-        {isShowing && <>{children}</>}
-      </div>
+      > */}
+      <Chanells />
+      {isShowing && <>{children}</>}
+      {/* </div> */}
     </div>
   )
 }

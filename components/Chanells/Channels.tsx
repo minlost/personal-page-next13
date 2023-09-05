@@ -14,19 +14,15 @@ const Channels = () => {
 
   return (
     <div
-      className={`z-10 aspect-video h-full w-full fixed top-0 left-0 overflow-hidden duration-1000 ease-custom-bezier ${
-        channel === 2
-          ? "bg-slate-400"
-          : channel === 4
-          ? "bg-white"
-          : "bg-slate-700"
+      className={`z-10 w-full h-full absolute top-0 left-0 overflow-hidden duration-1000 ease-custom-bezier ${
+        channel === 2 ? "bg-slate-400" : channel === 4 ? "bg-white" : "bg-black"
       }`}
     >
       {channel === 1 && (
-        <div className="video-overlay  w-full h-full  ">
+        <div className="  w-full h-full rowGradient ">
           <video
             ref={videoRef}
-            className={`w-full h-full ${
+            className={`w-full h-full opacity-50 ${
               isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
             }  `}
             playsInline
@@ -34,10 +30,21 @@ const Channels = () => {
           >
             <source src="/video/pulp.mp4" type="video/mp4" />
           </video>
+          <video
+            className={`w-full h-full opacity-20 ${
+              isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
+            }  `}
+            playsInline
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/video/tvEffect.mp4" type="video/mp4" />
+          </video>
         </div>
       )}
       {channel === 2 && (
-        <div className="video-overlay  w-full h-full  ">
+        <div className="  w-full h-full rowGradient ">
           <video
             ref={videoRef}
             className={`w-full h-full ${
@@ -47,6 +54,17 @@ const Channels = () => {
             autoPlay
           >
             <source src="/video/psycho.mp4" type="video/mp4" />
+          </video>
+          <video
+            className={`w-full h-full opacity-20 ${
+              isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
+            }  `}
+            playsInline
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/video/tvEffect.mp4" type="video/mp4" />
           </video>
         </div>
       )}
