@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html className="" lang="en">
-      <body className={` ${inter.className}  `}>
+      <body className={` ${inter.className} h-screen  `}>
         <StarParallax />
         <SpaceSwitcher />
         <Screen>{children}</Screen>

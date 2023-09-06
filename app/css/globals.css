@@ -2,15 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  height: 100vh;
-}
-
-/* Avoid Chrome to see Safari hack */
+/* Add to style.css */
 @supports (-webkit-touch-callout: none) {
-  body {
-    /* The hack for Safari */
-    height: -webkit-fill-available;
+  .h-screen {
+    height: 100vh;
+    max-height: -webkit-fill-available !important;
   }
 }
 
