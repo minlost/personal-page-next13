@@ -74,7 +74,6 @@ button {
     );
   background-size: 100% 4px, 30px 100%;
   z-index: 1;
-  /* animation: flicker 100ms infinite; */
 }
 .video-overlay:after {
   content: "";
