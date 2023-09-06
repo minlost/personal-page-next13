@@ -20,9 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html className="" lang="en">
-      <body
-        className={` ${inter.className} flex justify-center  w-full  bg-black  overflow-hidden `}
-      >
+      <body className={` ${inter.className}  `}>
         <StarParallax />
         <SpaceSwitcher />
         <Screen>{children}</Screen>
