@@ -18,7 +18,7 @@ export default function Home() {
       <ul
         className={cn(
           `mt-20  md:grid grid-cols-1 md:grid-cols-2 z-50 gap-x-16 overflow-hidden `,
-          `${isTvMode ? "md:mt-64" : "mt-48 md:mt-96 "}`
+          `${isTvMode ? "md:mt-64" : "mt-64 md:mt-96 "}`
         )}
       >
         {projects.map((project, index) => (
