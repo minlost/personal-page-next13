@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Add to style.css */
+/* iPhone h-sceen fix */
 @supports (-webkit-touch-callout: none) {
   .h-screen {
     height: 100vh;
