@@ -2,7 +2,7 @@
 
 import { useSwitchScreen } from "@/hooks/useSwitchScreen"
 import { FC } from "react"
-import Chanells from "../channels/Channels"
+import Chanells from "../Channels/Channels"
 import ScreenAnimatator from "./ScreenAnimatator"
 
 interface ScreenProps {
