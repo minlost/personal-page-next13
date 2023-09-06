@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html className="" lang="en">
       <body
-        className={` ${inter.className} flex justify-center  w-full min-h-screen bg-black  overflow-hidden `}
+        className={` ${inter.className} flex justify-center  w-full  bg-black  overflow-hidden `}
       >
         <StarParallax />
         <SpaceSwitcher />
