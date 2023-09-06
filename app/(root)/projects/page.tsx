@@ -1,35 +1,18 @@
 "use client"
 
+import PageStyler from "@/components/pageStyler/PageStyler"
 import Project from "@/components/project/Project"
 import LinksBox from "@/components/ui/LinksBox"
 import ProgramSwitcher from "@/components/ui/ProgramSwitcher"
-import { useShowScrollbar } from "@/hooks/useShowScrollbar"
 import { useSwitchScreen } from "@/hooks/useSwitchScreen"
 import { projects } from "@/lib/projects"
 import { cn } from "@/lib/utils"
-import { useState } from "react"
 
 export default function Home() {
-  const { isTvMode, toggleTVMode, channel, isSwaping } = useSwitchScreen()
-
-  const [isAnimating, setIsAnimating] = useState(true)
-
-  const { shouldShowScrollbar } = useShowScrollbar(isTvMode)
+  const { isTvMode } = useSwitchScreen()
 
   return (
-    <div
-      className={`
-    ${
-      shouldShowScrollbar && isTvMode ? "overflow-y-scroll " : "overflow-hidden"
-    }
-    ${
-      isTvMode
-        ? "aspect-video text-[1.2em] md:text-[3em] -translate-y-[1px] z-50 "
-        : "w-full h-screen  text-[2em] md:text-[4em] z-50 overflow-y-scroll "
-    } custom-text-shadow relative  px-5 md:px-16 lg:px-32 xl:px-44 z-[200] ${
-        isSwaping ? "animate-textShaking" : ""
-      } translate-y-[0.1px] `}
-    >
+    <PageStyler>
       <ProgramSwitcher />
 
       <ul
@@ -43,6 +26,6 @@ export default function Home() {
         ))}
       </ul>
       <LinksBox />
-    </div>
+    </PageStyler>
   )
 }

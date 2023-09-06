@@ -21,7 +21,7 @@ const ChBtn: FC<ChBtnProps> = ({ setChannel, handleChannel, item }) => {
   return (
     <div
       onClick={handleClick}
-      className="relative flex justify-center cursor-pointer "
+      className="relative flex justify-center cursor-link "
     >
       <div className="shadow-controller-button-shadow rounded-[4px]">
         <div className="controller_btn__channel controller_btn controller_btn_animation"></div>
@@ -133,7 +133,7 @@ const Controller: FC = () => {
       <div className=" z-[100] w-[85%] h-[80%] bg-controller-body-bg flex flex-col items-center rounded-[5px] border-[6px] border-black">
         <ControllerBodySection className={"h-[9%] pb-[20px]"}>
           <ControllerBodySectionBody>
-            <div className="relative flex justify-center cursor-pointer">
+            <div className="relative flex justify-center cursor-link">
               <div className="shadow-controller-button-shadow rounded-[4px]">
                 <div
                   onClick={() => toggleTVMode()}
@@ -174,7 +174,7 @@ const Controller: FC = () => {
           </div>
           <div
             onClick={() => muteVideoFnc()}
-            className=" controller_btn_box_shadow_round rounded-full flex justify-center items-center shadow-controller-button-shadow shadow_round_left "
+            className=" controller_btn_box_shadow_round rounded-full flex justify-center items-center shadow-controller-button-shadow shadow_round_left cursor-link "
           >
             <div className="controller__btn__mute controller_btn  controller_btn_animation">
               <BsFillVolumeMuteFill className="text-[20px] text-white" />
@@ -187,7 +187,7 @@ const Controller: FC = () => {
             onClick={() => setIsShowing(!isShowing)}
             className="controller__btn__shadow_show"
           >
-            <div className="controller__btn__show controller_btn  controller_btn_animation"></div>
+            <div className="controller__btn__show controller_btn  controller_btn_animation cursor-link "></div>
             <div className="controller_btn__label">
               <span>SHOW</span>
             </div>

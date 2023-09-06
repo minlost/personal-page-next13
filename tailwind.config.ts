@@ -1,5 +1,6 @@
 import { url } from "inspector"
 import type { Config } from "tailwindcss"
+import plugin from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -8,6 +9,10 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    cursor: {
+      noraml: "url(/cursors/normal.cur), pointer",
+      link: "url(/cursors/link.cur), pointer",
+    },
     extend: {
       gridTemplateColumns: {
         "3fr": "repeat(3, 1fr)",
@@ -16,8 +21,11 @@ const config: Config = {
         "3fr": "repeat(3, 1fr)",
       },
       textShadow: {
-        yellow: "1px 1px 2px rgba(255, 255, 0, 0.5)",
+        def: " 1px 3px #d64444, -1px -3px #5a7460",
+        anim: "1px 3px #ffff, -1px -3px #0c0c0c",
+        footerLinks: "1px 3px #ffff, -1px -3px #208d20",
       },
+
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -32,17 +40,20 @@ const config: Config = {
       },
       keyframes: {
         textShaking: {
-          "0%": { transform: "translateY(0)" },
+          "0%": {
+            transform: "translateY(0)        ",
+            filter: "blur(10px)",
+          },
           "10%": { transform: "translateY(-2px)" },
           "20%": { transform: "translateY(2px)" },
-          "30%": { transform: "translateY(-2px)" },
+          "30%": { transform: "translateY(-2px)", filter: "blur(5px)" },
           "40%": { transform: "translateY(2px)" },
           "50%": { transform: "translateY(0)" },
-          "60%": { transform: "translateY(-2px)" },
+          "60%": { transform: "translateY(-2px)", filter: "blur(7px)" },
           "70%": { transform: "translateY(2px)" },
           "80%": { transform: "translateY(-2px)" },
           "90%": { transform: "translateY(2px)" },
-          "100%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(0)        ", filter: "blur(0px)" },
         },
 
         blinkmulticolor: {
@@ -79,10 +90,11 @@ const config: Config = {
         },
       },
       animation: {
-        noise: "noise 5 easy-in-out infinite",
+        noise: "noise 5 ease-in-out infinite",
         move: "move 10s linear infinite",
         blinkmulticolor: "blinkmulticolor 0.5s linear infinite",
         textShaking: "textShaking 0.5s ",
+        textShakingFirstLoad: "textShaking 2s ",
       },
       boxShadow: {
         "screen-glowing": "0px 0px 14px 0px rgba(255, 255, 255, 0.5)",
@@ -93,6 +105,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-textshadow")],
 }
 export default config

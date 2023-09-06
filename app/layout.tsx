@@ -1,4 +1,4 @@
-import Screen from "@/components/Screen"
+import Screen from "@/components/screen/Screen"
 import Controller from "@/components/controller/Controller"
 import SpaceSwitcher from "@/components/ui/SpaceSwitcher"
 import StarParallax from "@/paralax/StarParallax"
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html className="" lang="en">
       <body
-        className={` ${inter.className} flex justify-center  w-full  bg-black  overflow-hidden `}
+        className={` ${inter.className} cursor-noraml flex justify-center  w-full  bg-black  overflow-hidden `}
       >
         <StarParallax />
         <SpaceSwitcher />

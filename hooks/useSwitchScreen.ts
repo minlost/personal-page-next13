@@ -17,6 +17,7 @@ type SwitchScreenStore = {
   isShowing: boolean
   setIsShowing: (isShowing: boolean) => void
   isSwaping: boolean
+  isFirstLoad: boolean
 }
 
 export const useSwitchScreen = create<SwitchScreenStore>((set) => ({
@@ -56,4 +57,5 @@ export const useSwitchScreen = create<SwitchScreenStore>((set) => ({
   isShowing: true,
   setIsShowing: (isShowing) => set(() => ({ isShowing })),
   isSwaping: false,
+  isFirstLoad: true,
 }))

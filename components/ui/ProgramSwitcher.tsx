@@ -19,6 +19,7 @@ const ProgramSwitcher = () => {
     isTvMode,
     videoRef,
     isSwaping,
+    isFirstLoad,
   } = useSwitchScreen()
 
   const navLinks = [
@@ -91,18 +92,20 @@ const ProgramSwitcher = () => {
     >
       <div
         className={`text-[0.6em] ${
-          isSwaping ? "custom-text-shadow-animation" : " text-red-800"
-        } flex flex-col`}
+          isSwaping || isFirstLoad
+            ? "custom-text-shadow-animation"
+            : " text-red-800"
+        } flex flex-col `}
       >
         {newDate.toDateString()}
         {navLinks.map((link, index) => (
           <Link
             className={`${cn(
               "text-[0.6em]",
-              isSwaping
+              isSwaping || isFirstLoad
                 ? "custom-text-shadow-animation"
                 : path === link.href
-                ? "text-black"
+                ? "text-white"
                 : "text-red-500"
             )}`}
             key={index}
@@ -120,27 +123,27 @@ const ProgramSwitcher = () => {
         <div className="flex gap-2 items-center justify-end text-[0.8em] md:text-[0.6em]">
           <div
             onClick={() => handleChannel(false)}
-            className="hover:scale-105 ease-in-out duration-200 active:scale-95 rotate-180 text-[0.8em] cursor-pointer mb-[3px]"
+            className="hover:scale-105 ease-in-out duration-200 active:scale-95 rotate-180 text-[0.8em] cursor-link mb-[3px]"
           >
             ▶
           </div>
           <div>Channel {channel} </div>
           <div
             onClick={() => handleChannel(true)}
-            className="hover:scale-105 ease-in-out duration-200  active:scale-95  text-[0.8em]  cursor-pointer mb-[3px] "
+            className="hover:scale-105 ease-in-out duration-200  active:scale-95  text-[0.8em]  cursor-link mb-[3px] "
           >
             ▶
           </div>
         </div>
         <div className="flex gap-5 justify-center text-[0.5em]">
           <div
-            className="hover:scale-105 ease-in-out duration-200 active:scale-100  cursor-pointer text-[1em]"
+            className="hover:scale-105 ease-in-out duration-500 active:scale-100  cursor-link text-[1em]"
             onClick={muteVideoFnc}
           >
             Mute/Unmute
           </div>
           <div
-            className="hover:scale-105 ease-in-out duration-200 active:scale-100 cursor-pointer text-[1em]"
+            className="hover:scale-105 ease-in-out duration-500 active:scale-100 cursor-link text-[1em]"
             onClick={togglePlayVideoFunc}
           >
             Play/Stop

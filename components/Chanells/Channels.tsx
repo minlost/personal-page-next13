@@ -14,16 +14,31 @@ const Channels = () => {
 
   return (
     <div
-      className={`z-10 w-full h-full absolute top-0 left-0 overflow-hidden duration-1000 ease-custom-bezier ${
-        channel === 2 ? "bg-slate-400" : channel === 4 ? "bg-white" : "bg-black"
+      className={`z-10 w-full h-full absolute top-0 left-0 overflow-hidden  ${
+        channel === 3 ? "bg-slate-400" : channel === 5 ? "bg-white" : "bg-black"
       }`}
     >
       {channel === 1 && (
         <div className="  w-full h-full rowGradient ">
           <video
+            className={`w-full h-full opacity-20 rowGradient ${
+              isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
+            }  `}
+            playsInline
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/video/tvEffect.mp4" type="video/mp4" />
+          </video>
+        </div>
+      )}
+      {channel === 2 && (
+        <div className="  w-full h-full rowGradient ">
+          <video
             ref={videoRef}
             className={`w-full h-full opacity-50 ${
-              isTvMode ? "scale-150" : "scale-[5] lg:scale-150 "
+              isTvMode ? "scale-150" : "scale-[5] md:scale-[1.8] "
             }  `}
             playsInline
             autoPlay
@@ -44,7 +59,7 @@ const Channels = () => {
           </video>
         </div>
       )}
-      {channel === 2 && (
+      {channel === 3 && (
         <div className="  w-full h-full rowGradient ">
           <video
             ref={videoRef}
@@ -70,8 +85,8 @@ const Channels = () => {
           </video>
         </div>
       )}
-      {channel === 3 && (
-        <div className="video-overlay  w-full h-full  ">
+      {channel === 4 && (
+        <div className="video-overlay  w-full h-full rowGradient   ">
           <video
             ref={videoRef}
             className={`w-full h-full ${
@@ -96,16 +111,16 @@ const Channels = () => {
         </div>
       )}
 
-      {channel === 4 && (
+      {channel === 5 && (
         <>
           <div className="video-overlay  w-full h-full  "></div>
         </>
       )}
-      {channel === 5 && (
+      {channel === 6 && (
         <div className=" bg-slate-700 video-overlay  w-full h-full  "></div>
       )}
 
-      {(channel === 6 || channel === 7 || channel === 8 || channel === 9) && (
+      {(channel === 7 || channel === 8 || channel === 9) && (
         <div className=" w-full h-full  ">
           <video
             ref={videoRef}
