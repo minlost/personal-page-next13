@@ -41,8 +41,8 @@ export default function Home() {
         {projects.map((project, index) => (
           <Project key={index} project={project} />
         ))}
-        <LinksBox />
       </ul>
+      <LinksBox />
     </div>
   )
 }

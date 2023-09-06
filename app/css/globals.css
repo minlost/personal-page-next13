@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    height: -webkit-fill-available;
+  }
+}
+
 .custom-text-shadow {
   text-shadow: 1px 3px #ffff, -1px -3px #8d2020;
 }
