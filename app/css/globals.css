@@ -8,6 +8,11 @@
     height: 100vh;
     max-height: -webkit-fill-available !important;
   }
+
+  .min-h-screen {
+    min-height: 100vh;
+    min-height: -webkit-fill-available !important;
+  }
 }
 
 a,
