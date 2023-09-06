@@ -14,12 +14,12 @@ const Channels = () => {
 
   return (
     <div
-      className={`z-10 w-full h-full absolute top-0 left-0 overflow-hidden  ${
+      className={`z-10 w-full h-full aspect-video absolute top-0 left-0 overflow-hidden ${
         channel === 3 ? "bg-slate-400" : channel === 5 ? "bg-white" : "bg-black"
       }`}
     >
       {channel === 1 && (
-        <div className="  w-full h-full rowGradient ">
+        <div className="  w-full h-screen rowGradient ">
           <video
             className={`w-full h-full opacity-20 rowGradient ${
               isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
