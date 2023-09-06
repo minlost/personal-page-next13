@@ -29,12 +29,23 @@ const Channels = () => {
             muted
             loop
           >
-            <source src="/video/tvEffect.mp4" type="video/mp4" />
+            <source src="/video/tvEffect-c.mp4" type="video/mp4" />
           </video>
         </div>
       )}
       {channel === 2 && (
         <div className="  w-full h-full rowGradient ">
+          <video
+            className={`w-full h-full opacity-20 ${
+              isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
+            }  `}
+            playsInline
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/video/tvEffect-c.mp4" type="video/mp4" />
+          </video>
           <video
             ref={videoRef}
             className={`w-full h-full opacity-50 ${
@@ -44,35 +55,13 @@ const Channels = () => {
             autoPlay
             loop
           >
-            <source src="/video/pulp.mp4" type="video/mp4" />
-          </video>
-          <video
-            className={`w-full h-full opacity-20 ${
-              isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
-            }  `}
-            playsInline
-            autoPlay
-            muted
-            loop
-          >
-            <source src="/video/tvEffect.mp4" type="video/mp4" />
+            <source src="/video/pulp-c.mp4" type="video/mp4" />
           </video>
         </div>
       )}
       {channel === 3 && (
         <div className="  w-full h-full rowGradient ">
           <video
-            ref={videoRef}
-            className={`w-full h-full ${
-              isTvMode ? "scale-150" : "scale-[4] lg:scale-150 "
-            }  `}
-            playsInline
-            autoPlay
-            loop
-          >
-            <source src="/video/psycho.mp4" type="video/mp4" />
-          </video>
-          <video
             className={`w-full h-full opacity-20 ${
               isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
             }  `}
@@ -81,23 +70,24 @@ const Channels = () => {
             muted
             loop
           >
-            <source src="/video/tvEffect.mp4" type="video/mp4" />
+            <source src="/video/tvEffect-c.mp4" type="video/mp4" />
+          </video>
+          <video
+            ref={videoRef}
+            className={`w-full h-full ${
+              isTvMode ? "scale-150" : "scale-[4] lg:scale-150 "
+            }  `}
+            playsInline
+            autoPlay
+            loop
+          >
+            <source src="/video/psycho-c.mp4" type="video/mp4" />
           </video>
         </div>
       )}
       {channel === 4 && (
         <div className="video-overlay  w-full h-full rowGradient   ">
           <video
-            ref={videoRef}
-            className={`w-full h-full ${
-              isTvMode ? "scale-150" : "scale-[4] lg:scale-150 "
-            }  `}
-            playsInline
-            autoPlay
-          >
-            <source src="/video/shinning.mp4" type="video/mp4" />
-          </video>
-          <video
             className={`w-full h-full opacity-20 ${
               isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
             }  `}
@@ -106,7 +96,17 @@ const Channels = () => {
             muted
             loop
           >
-            <source src="/video/tvEffect.mp4" type="video/mp4" />
+            <source src="/video/tvEffect-c.mp4" type="video/mp4" />
+          </video>
+          <video
+            ref={videoRef}
+            className={`w-full h-full ${
+              isTvMode ? "scale-150" : "scale-[4] lg:scale-150 "
+            }  `}
+            playsInline
+            autoPlay
+          >
+            <source src="/video/shinning-c.mp4" type="video/mp4" />
           </video>
         </div>
       )}
@@ -132,7 +132,7 @@ const Channels = () => {
             loop
             muted
           >
-            <source src="/video/whitenoise.mp4" type="video/mp4" />
+            <source src="/video/whitenoise-c.mp4" type="video/mp4" />
           </video>
         </div>
       )}
