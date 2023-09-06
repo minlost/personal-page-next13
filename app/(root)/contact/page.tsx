@@ -15,14 +15,14 @@ export default function Home() {
 
       <ul
         className={cn(
-          `    mt-20 flex items-center flex-col`,
+          `   mt-20 flex items-center flex-col`,
           `${isTvMode ? "md:mt-64" : "mt-48  "}`
         )}
       >
         <li>
           See ya in <span className="animate-blinkmulticolor">hell</span>
         </li>
-        <li> vaclav.wolf.vlcek@gmail.com</li>
+        <li className="text-[0.8em]"> vaclav.wolf.vlcek@gmail.com</li>
         <li>+420 775 931 110</li>
       </ul>
 
