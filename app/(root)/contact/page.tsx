@@ -22,7 +22,7 @@ export default function Home() {
       ${
         isTvMode
           ? "aspect-video text-[1.2em] md:text-[3em] -translate-y-[1px] z-50 "
-          : "w-full h-full  text-[2em] md:text-[4em] z-50 overflow-y-scroll "
+          : "w-full h-screen  text-[2em] md:text-[4em] z-50 overflow-y-scroll "
       } custom-text-shadow relative  px-5 md:px-16 lg:px-32 xl:px-44 z-[200] ${
         isSwaping ? "animate-textShaking" : ""
       } translate-y-[0.1px]  `}
