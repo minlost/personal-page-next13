@@ -23,8 +23,8 @@ export default function HomePage() {
 
       <div
         className={cn(
-          `    mt-20  relative`,
-          `${isTvMode ? "md:mt-52" : "mt-48 md:mt-96 "}`
+          `    mt-48  relative`,
+          `${isTvMode ? "md:mt-52" : "mt-64 md:mt-96 "}`
         )}
       >
         <div className="leading-tight">
