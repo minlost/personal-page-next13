@@ -29,7 +29,7 @@ const Channels = () => {
             muted
             loop
           >
-            <source src="/video/tvEffect-c.mp4" type="video/mp4" />
+            <source src="/video/tvEffect-d.mp4" type="video/mp4" />
           </video>
         </div>
       )}
@@ -44,7 +44,7 @@ const Channels = () => {
             muted
             loop
           >
-            <source src="/video/tvEffect-c.mp4" type="video/mp4" />
+            <source src="/video/tvEffect-d.mp4" type="video/mp4" />
           </video>
           <video
             ref={videoRef}
@@ -70,7 +70,7 @@ const Channels = () => {
             muted
             loop
           >
-            <source src="/video/tvEffect-c.mp4" type="video/mp4" />
+            <source src="/video/tvEffect-d.mp4" type="video/mp4" />
           </video>
           <video
             ref={videoRef}
@@ -81,7 +81,7 @@ const Channels = () => {
             autoPlay
             loop
           >
-            <source src="/video/psycho-c.mp4" type="video/mp4" />
+            <source src="/video/psycho-d.mp4" type="video/mp4" />
           </video>
         </div>
       )}
@@ -96,7 +96,7 @@ const Channels = () => {
             muted
             loop
           >
-            <source src="/video/tvEffect-c.mp4" type="video/mp4" />
+            <source src="/video/tvEffect-d.mp4" type="video/mp4" />
           </video>
           <video
             ref={videoRef}
