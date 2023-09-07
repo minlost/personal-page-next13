@@ -21,6 +21,7 @@ const Channels = () => {
       {channel === 1 && (
         <div className="  w-full h-screen rowGradient ">
           <video
+            preload="auto"
             className={`w-full h-full opacity-20 rowGradient ${
               isTvMode ? "scale-150" : "scale-[5] md:scale-[4] lg:scale-150 "
             }  `}
@@ -43,6 +44,7 @@ const Channels = () => {
             autoPlay
             muted
             loop
+            preload="auto"
           >
             <source src="/video/tvEffect-c.mp4" type="video/mp4" />
           </video>
@@ -54,6 +56,7 @@ const Channels = () => {
             playsInline
             autoPlay
             loop
+            preload="auto"
           >
             <source src="/video/pulp-c.mp4" type="video/mp4" />
           </video>
@@ -69,6 +72,7 @@ const Channels = () => {
             autoPlay
             muted
             loop
+            preload="auto"
           >
             <source src="/video/tvEffect-c.mp4" type="video/mp4" />
           </video>
@@ -80,6 +84,7 @@ const Channels = () => {
             playsInline
             autoPlay
             loop
+            preload="auto"
           >
             <source src="/video/psycho-c.mp4" type="video/mp4" />
           </video>
@@ -95,6 +100,7 @@ const Channels = () => {
             autoPlay
             muted
             loop
+            preload="auto"
           >
             <source src="/video/tvEffect-c.mp4" type="video/mp4" />
           </video>
@@ -105,6 +111,7 @@ const Channels = () => {
             }  `}
             playsInline
             autoPlay
+            preload="auto"
           >
             <source src="/video/shinning-c.mp4" type="video/mp4" />
           </video>
@@ -131,6 +138,7 @@ const Channels = () => {
             autoPlay
             loop
             muted
+            preload="auto"
           >
             <source src="/video/whitenoise-c.mp4" type="video/mp4" />
           </video>

@@ -20,11 +20,15 @@ type SwitchScreenStore = {
   isFirstLoad: boolean
 }
 
-export const useSwitchScreen = create<SwitchScreenStore>((set) => ({
+export const useSwitchScreen = create<SwitchScreenStore>((set, get) => ({
   isTvMode: false,
   toggleTVMode: () => set((state) => ({ isTvMode: !state.isTvMode })),
   channel: 1,
   setChannel: (channel) => {
+    const currentVideo = get().videoRef?.current
+    if (currentVideo) {
+      currentVideo.remove()
+    }
     set(() => ({ channel, isSwaping: true }))
     setTimeout(() => set(() => ({ isSwaping: false })), 500)
   },
