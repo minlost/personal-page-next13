@@ -1,7 +1,7 @@
 "use client"
 
 import { useSwitchScreen } from "@/hooks/useSwitchScreen"
-import { Suspense, useEffect, useRef } from "react"
+import { useEffect, useRef } from "react"
 import Channel from "./Channel"
 
 const Channels = () => {
@@ -19,28 +19,22 @@ const Channels = () => {
         channel === 3 ? "bg-slate-400" : channel === 5 ? "bg-white" : "bg-black"
       }`}
     >
-      {channel === 1 && (
-        <Suspense fallback={<div>Loading...</div>}>
-          <Channel />
-        </Suspense>
-      )}
+      {channel === 1 && <Channel />}
       {channel === 2 && (
-        <Suspense fallback={<div>Loading...</div>}>
-          <Channel>
-            <video
-              ref={videoRef}
-              className={`w-full h-full opacity-50 ${
-                isTvMode ? "scale-150" : "scale-[5] md:scale-[1.8] "
-              }  `}
-              playsInline
-              autoPlay
-              loop
-              preload="auto"
-            >
-              <source src="/video/pulp-c.mp4" type="video/mp4" />
-            </video>
-          </Channel>
-        </Suspense>
+        <Channel>
+          <video
+            ref={videoRef}
+            className={`w-full h-full opacity-50 ${
+              isTvMode ? "scale-150" : "scale-[5] md:scale-[1.8] "
+            }  `}
+            playsInline
+            autoPlay
+            loop
+            preload="auto"
+          >
+            <source src="/video/pulp-c.mp4" type="video/mp4" />
+          </video>
+        </Channel>
       )}
       {channel === 3 && (
         <Channel>
