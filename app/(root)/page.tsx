@@ -45,8 +45,8 @@ export default function HomePage() {
               />
             )}
           </span>
-          , an enthusiastic Junior Developer passionate about programming,
-          technology, astronomy, and science. With a specialization in{" "}
+          , an enthusiastic Web Developer passionate about programming,
+          technology, and science. With a specialization in{" "}
           <span className="text-white">
             React, Next.js, TypeScript, and Python
           </span>
